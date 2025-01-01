@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global styles */
+body {
+  @apply font-sans bg-gray-100 text-gray-900 min-h-screen;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  @apply font-bold text-gray-700;
+}
+
+/* Links */
+a {
+  @apply text-blue-500 hover:text-blue-700 underline transition-colors duration-200;
+}
+
+/* Buttons */
+button {
+  @apply px-4 py-2 rounded-md text-white bg-blue-500 hover:bg-blue-700 disabled:opacity-50 disabled:bg-gray-400 disabled:cursor-not-allowed cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50;
+}
+
+/* Input fields and labels */
+input {
+    @apply border rounded px-3 py-2 w-full focus:outline-none focus:ring focus:border-blue-500;
+}
+
+input:disabled {
+    @apply bg-gray-100 cursor-not-allowed;
+}
+
+.mb-4 label {
+  @apply block text-gray-700 text-sm font-bold mb-2;
+}
+
+.mb-4 p {
+    @apply text-red-500 text-sm mt-1;
+}
+
+/* Card layout */
+.bg-white.rounded-lg.shadow-md.p-4.mb-4 {
+    @apply bg-white rounded-lg shadow-md p-4 mb-4;
+}
+
+/* Modal background */
+.fixed.top-0.left-0.w-full.h-full.bg-black.bg-opacity-50.z-50.flex.items-center.justify-center {
+    @apply fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-50 flex items-center justify-center;
+}
+
+
+/* Modal container */
+.bg-white.rounded-lg.shadow-xl.max-w-md.w-full.overflow-hidden {
+  @apply bg-white rounded-lg shadow-xl max-w-md w-full overflow-hidden;
+}
+
+/* Navigation */
+header {
+  @apply bg-gray-800 text-white p-4 flex justify-between items-center;
+}
+
+nav ul {
+  @apply flex space-x-4;
+}
