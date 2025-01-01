@@ -1,0 +1,7 @@
+{
+  "scripts": {
+    "start:dev": "concurrently \"npm start\" \"node index.js\"",
+    "start:backend": "node index.js",
+    "test:unit": "npm test"
+  }
+}
